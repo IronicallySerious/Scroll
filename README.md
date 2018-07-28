@@ -1,2 +1,2 @@
 # Scroll
-A C++ logging engine (Under developement)
+A C++ logging engine (Under development)
