@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Twarit\source\repos\Scroll\build\CMakeFiles\5ba7a3419813df63a20c505c65e70bf6\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{76C42F99-107C-38A5-BB1C-2DD341CDD298}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
