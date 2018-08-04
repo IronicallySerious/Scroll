@@ -6,5 +6,6 @@ file(GLOB_RECURSE HEADER
 
 project(Scroll)
 add_definitions(-DSCROLL_INIT)
+add_executable(ScrollTest main.cpp ${HEADER})
 
-add_executable(ScrollTest main.cpp)
+target_include_directories(ScrollTest PUBLIC ${HEADER})

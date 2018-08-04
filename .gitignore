@@ -1,6 +1,10 @@
 # Prerequisites
 *.d
 
+# CMake build files
+build/
+*.vcxproj
+
 # Visual Studio generated files
 .vs/
 
