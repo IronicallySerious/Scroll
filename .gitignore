@@ -2,6 +2,7 @@
 *.d
 
 # Visual Studio generated files
+build/
 .vs/
 
 # Compiled Object files
