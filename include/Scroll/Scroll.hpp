@@ -1,6 +1,8 @@
 #pragma once
 
+#include <fstream>
 #include <iostream>
+#include <string>
 #include <vector>
 #include <mutex>
 
@@ -31,16 +33,31 @@ namespace Scroll
 		std::vector<std::mutex> m_StreamMutexes;
 
 	public:
-		Scroll();
-		~Scroll();
+		Scroll()
+		{
+		}
 
-		void print(void * x, class Scroll)
+		~Scroll()
+		{
+			for(auto & item : m_StreamMutexes)
+			{
+				item.unlock();
+			}
+		}
+
+		void print(std::string x, class Scroll)
 		{
 			m_CoutMutex.try_lock();
 
 			PRINT(x);
 
 			m_CoutMutex.unlock();
+		}
+
+		void printToFileStream(std::ostream & stream, std::string data)
+		{
+			stream << data;
+			stream.flush();
 		}
 
 	protected:
